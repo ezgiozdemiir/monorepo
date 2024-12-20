@@ -1,0 +1,19 @@
+{
+  "name": "pnpm-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:ui": "pnpm --filter ui dev",
+    "start:second-ui": "pnpm --filter second-ui start:dev",
+    "start": "pnpm run start:ui & pnpm run start:second-ui",
+    "build": "pnpm recursive run build",
+    "test": "pnpm recursive run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pnpmworkspace/logger": "link:packages\\logger"
+  }
+}
