@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "start:ui": "pnpm --filter ui dev",
     "start:second-ui": "pnpm --filter second-ui start:dev",
