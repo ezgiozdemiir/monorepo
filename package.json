@@ -7,9 +7,9 @@
     "packages/*"
   ],
   "scripts": {
-    "start:ui": "pnpm --filter ui dev",
-    "start:second-ui": "pnpm --filter second-ui start:dev",
-    "start": "pnpm run start:ui & pnpm run start:second-ui",
+    "start:first-react-app": "pnpm --filter first-react-app dev",
+    "start:second-react-app": "pnpm --filter first-react-app start:dev",
+    "start": "pnpm run start:first-react-app & pnpm run start:second-react-app",
     "build": "pnpm recursive run build",
     "test": "pnpm recursive run test"
   },

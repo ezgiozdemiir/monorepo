@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "outDir": "dist",
+      "rootDir": "src",
+      "jsx": "react",
+      "moduleResolution": "node",
+      "target": "ES6",
+      "declaration": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true
+    },
+    "include": ["src"]
+  }
+  
